@@ -47,7 +47,10 @@
   @apply prose-strong:text-text;
   @apply prose-a:text-primary;
   @apply prose-li:text-text prose-li:marker:text-text;
-  @apply prose-table:overflow-hidden prose-table:rounded prose-thead:border-border prose-thead:bg-[#2e3b47] prose-tr:border-none prose-th:p-3 prose-th:text-base prose-th:text-text-dark prose-td:p-3 prose-td:text-base prose-td:text-text;
+  @apply prose-table:overflow-hidden prose-table:rounded prose-table:border prose-table:border-border;
+  @apply prose-thead:border-border prose-thead:bg-[#2e3b47] prose-th:py-4 prose-th:px-4 prose-th:text-text-dark;
+  @apply prose-tr:border-border;
+  @apply prose-td:px-3 prose-td:py-4 prose-td:text-text;
 }
 
 .content blockquote p {
@@ -70,7 +73,7 @@
   @apply mb-0;
 }
 
-.tab-link.active {
+.active-tab {
   @apply bg-[#242e38];
 }
 
