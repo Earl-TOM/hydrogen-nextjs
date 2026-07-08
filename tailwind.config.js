@@ -1,4 +1,4 @@
-const theme = require("./config/theme.json");
+const theme = require("./src/config/theme.json");
 
 let font_base = Number(theme.fonts.font_size.base.replace("px", ""));
 let font_scale = Number(theme.fonts.font_size.scale);
@@ -25,8 +25,7 @@ if (theme.fonts.font_family.secondary) {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./layouts/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
     "./content/**/*.{md,mdx}",
   ],
   theme: {

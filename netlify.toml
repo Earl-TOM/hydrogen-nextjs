@@ -1,2 +1,2 @@
 [functions]
-included_files = ["content/**"]
+included_files = ["src/content/**"]
