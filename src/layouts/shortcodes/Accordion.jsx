@@ -8,7 +8,7 @@ const Accordion = ({ title, children, className }) => {
   return (
     <div className={`accordion border border-border rounded ${className}`}>
       <button
-        className="relative block w-full bg-[#2e3b47] px-4 py-3.5 text-left text-dark"
+        className="relative block w-full bg-[#2e3b47] px-4 py-3.5 text-left text-text-dark"
         onClick={() => setShow(!show)}
       >
         {title}

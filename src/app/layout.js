@@ -1,5 +1,5 @@
 import { TaxonomySlugProvider } from "@/context/state";
-import "@/styles/style.scss";
+import "@/styles/style.css";
 import config from "@config/config.json";
 import theme from "@config/theme.json";
 import TwSizeIndicator from "@layouts/components/TwSizeIndicator";

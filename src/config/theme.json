@@ -7,8 +7,8 @@
         "border": "#2f4050"
       },
       "text_color": {
-        "default": "#ceced0",
-        "dark": "#ffffff"
+        "text": "#ceced0",
+        "text-dark": "#ffffff"
       }
     }
   },
@@ -19,7 +19,7 @@
     },
     "font_size": {
       "base": "16",
-      "scale": "1.250"
+      "scale": "1.20"
     }
   }
 }

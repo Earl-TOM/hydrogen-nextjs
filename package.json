@@ -5,8 +5,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "node scripts/jsonGenerator.mjs && next dev",
-    "build": "node scripts/jsonGenerator.mjs && next build",
+    "dev": "concurrently \"node scripts/themeGenerator.mjs --watch\" \"node scripts/jsonGenerator.mjs && next dev\"",
+    "build": "node scripts/themeGenerator.mjs && node scripts/jsonGenerator.mjs && next build",
     "export": "next build && next export",
     "lint": "eslint .",
     "start": "next start"
@@ -30,20 +30,19 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/typography": "^0.5.8",
-    "autoprefixer": "^10.4.13",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/postcss": "^4.3.2",
+    "@tailwindcss/typography": "^0.5.20",
+    "concurrently": "^10.0.3",
     "date-fns": "^2.29.3",
     "date-fns-tz": "^1.3.7",
     "eslint": "10.6.0",
     "eslint-config-next": "16.2.10",
     "jshint": "^2.13.6",
-    "postcss": "^8.4.20",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1",
-    "sass": "^1.57.1",
     "sharp": "^0.31.2",
-    "tailwind-bootstrap-grid": "^5.0.1",
-    "tailwindcss": "^3.2.4"
+    "tailwind-bootstrap-grid": "^7.0.0",
+    "tailwindcss": "^4.3.2"
   }
 }

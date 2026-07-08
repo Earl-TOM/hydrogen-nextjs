@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@plugin "tailwind-bootstrap-grid" {
+  generate_container: false;
+}
+
+@import "./base.css" layer(base);
+@import "./buttons.css" layer(components);
+@import "./components.css" layer(components);
+@import "./navigation.css" layer(components);
+@import "./utilities.css";
+@import "./safe.css";
+
+@import "./generated-theme.css";

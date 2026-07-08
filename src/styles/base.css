@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-primary font-normal leading-tight text-dark;
+  @apply font-primary font-normal leading-tight text-text-dark;
 }
 
 h1,
@@ -43,4 +43,17 @@ h5,
 h6,
 .h6 {
   @apply text-h6;
+}
+
+b,
+strong {
+  @apply font-semibold;
+}
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  @apply border-border;
 }
