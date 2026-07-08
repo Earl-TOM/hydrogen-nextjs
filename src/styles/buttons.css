@@ -1,5 +1,5 @@
 .btn {
-  @apply inline-block border px-4 py-[11px] font-normal transition;
+  @apply inline-block border px-4 py-2.75 font-normal transition;
 }
 
 .btn-primary {
@@ -15,7 +15,7 @@
 }
 
 .btn-link::after {
-  @apply absolute right-0 bottom-0 h-[1px] w-0 bg-primary transition-all duration-200 content-[""];
+  @apply absolute right-0 bottom-0 h-px w-0 bg-primary transition-all duration-200 content-[""];
 }
 
 .btn-link:hover::after {
