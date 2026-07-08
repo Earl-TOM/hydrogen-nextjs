@@ -1,13 +1,12 @@
-import config from "@config/config.json";
 import { dateFormat } from "@lib/utils/dateFormat";
 import { readingTime } from "@lib/utils/readingTime";
 import { similerItems } from "@lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@lib/utils/textConverter";
-import { DiscussionEmbed } from "disqus-react";
 import Image from "next/image";
 import Link from "next/link";
 import SeoMeta from "./SeoMeta";
 import MDXContent from "./partials/MDXContent";
+import DisqusComments from "./components/DisqusComments";
 import Post from "./components/Post";
 
 const PostSingle = ({ post, slug, posts }) => {
@@ -85,12 +84,7 @@ const PostSingle = ({ post, slug, posts }) => {
                 </div>
               </article>
 
-              {config.disqus.enable && (
-                <DiscussionEmbed
-                  shortname={config.disqus.shortname}
-                  config={config.disqus.settings}
-                />
-              )}
+              <DisqusComments />
             </div>
           </div>
 
